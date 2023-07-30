@@ -143,6 +143,9 @@ table {
         height: 250px;
         width: 250px;
     }
+    .container{
+        margin-bottom: 300px;
+    }
 }
 /* FOOTER */
 
