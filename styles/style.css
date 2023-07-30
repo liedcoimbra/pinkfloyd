@@ -203,8 +203,8 @@ footer{
     border-radius: 0px 0px 0px 10px;
 }
 .container-picture img{
-    height: 225px;
-    width: 225px;
+    height: 100%;
+    width: 100%;
     object-fit: cover;
     border-radius: 0 0 0 10px;
 }
@@ -239,7 +239,7 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(0,0,0,1);
+    background-color: rgba(0,0,0,0.8);
     padding: 15px;
     width: 100%;
 }
@@ -274,6 +274,7 @@ footer{
     color: white;
 }
 .modal{
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -345,11 +346,15 @@ footer{
 .member-picture{
     transition: opacity 0.8s ease;
 }
+.member-picture img{
+    height: 100%;
+    width: 100%;
+}
 .member-picture:hover{
     opacity: 0;
 }
 
-/* APENAS ATUALMENTE*/
+/* APENAS CURIOSIDADE*/
 
 .curiosity-picture{
     width: 550px;

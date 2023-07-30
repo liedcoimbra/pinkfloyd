@@ -207,6 +207,10 @@
     #years{
         font-size: 30px;
     }
+    /* APENAS MEMBROS */
+    .member-picture{
+        height: 100%;
+    }
 }
 @media (max-width: 500px){
     /* APENAS DISCOGRAFIA */
@@ -235,6 +239,7 @@
         max-width: 260px;
     }
     .container-picture{
+        min-height: 260px;
         height: 260px;
     }
     .container-content, .container-description{
@@ -250,5 +255,10 @@
     }
     #years{
         font-size: 20px;
+    }
+    /* APENAS CURIOSIDADE */
+    .curiosity-picture{
+        width: 90%;
+        height: 100%;
     }
 }
