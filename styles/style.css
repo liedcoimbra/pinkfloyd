@@ -367,17 +367,23 @@ footer{
 }
 .curiosity-content{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: start;
     padding: 0px;
-    height: 180px;
+    height: 100%;
     width: 550px;
 }
 .curiosity-description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 17px;
-    padding: 5px;
     width: 100%;
     border-radius: 0px 0px 15px 15px;
     font-family: 'Oswald', sans-serif;
     line-height: 1.5;
     border-top: 5px black groove;
+}
+.curiosity-description p{
+    width: 95%;
 }
