@@ -348,9 +348,6 @@ footer{
     height: 100%;
     width: 100%;
 }
-.member-picture img{
-    
-}
 .member-picture{
     transition: opacity 0.8s ease;
 }
