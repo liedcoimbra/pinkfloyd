@@ -17,7 +17,7 @@ function abrirPreview(event) {
   videoPlayer.src = videoURL;
   modal.style.display = 'block';
   videoPlayer.play();
-  videoPlayer.volume = 0.3;
+  videoPlayer.volume = 1;
 }
 
 function fecharPreview() {
