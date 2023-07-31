@@ -344,6 +344,10 @@ footer{
     background-image: url(../images/members/david-gilmour-old.webp);
 }
 .member-picture{
+    height: 100%;
+    width: 100%;
+}
+.member-picture{
     transition: opacity 0.8s ease;
 }
 .member-picture img{
