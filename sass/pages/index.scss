@@ -1,0 +1,58 @@
+.index-body{
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+.logo{
+    margin-bottom: 30px;
+    text-align: center;
+}
+#logo{
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+}
+#title{
+    text-align: center;
+    font-size: 55px;
+    text-transform: uppercase;
+    margin-bottom: 120px;
+}
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.section{
+    display: flex;
+    flex-direction: column;
+    font-size: 45px;
+    align-items: center;
+    text-decoration: none;
+    transition: 100ms linear;
+    position: relative;
+    margin: 0px 40px 100px 40px;
+    box-sizing: border-box;
+}
+.section:hover{
+    transform: scale(1.1);
+}
+.button-image{
+    margin-top: 50px;
+    height: 200px;
+    width: 200px;
+    border: 3px transparent solid;
+    border-radius: 45px;
+    object-fit: cover;
+}
+.button-text{
+    color: white;
+    position: absolute;
+    text-transform: uppercase;
+}
+#trilhaSonora{
+    display: none;
+}

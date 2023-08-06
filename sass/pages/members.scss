@@ -1,0 +1,25 @@
+#syd{
+    background-image: url(../images/members/syd-barrett-old.jpeg);
+}
+#roger{
+    background-image: url(../images/members/roger-waters-old.jpg);
+}
+#richard{
+    background-image: url(../images/members/richard-wright-old.jpg);
+}
+#nick{
+    background-image: url(../images/members/nick-mason-old.avif);
+}
+#david{
+    background-image: url(../images/members/david-gilmour-old.webp);
+}
+.member-picture{
+    height: 100%;
+    width: 100%;
+}
+.member-picture{
+    transition: opacity 0.8s ease;
+}
+.member-picture:hover{
+    opacity: 0;
+}
