@@ -1,0 +1,42 @@
+footer{
+    background-color: #111;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #666;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+}
+.official-site{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.official-insta a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.creddits{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-transform: none;
+    align-items: center;
+}
+.insta{
+    height: 35px;
+    width: 35px;
+}
+.creddits a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.links{
+    text-transform: lowercase;
+    color: white;
+}
