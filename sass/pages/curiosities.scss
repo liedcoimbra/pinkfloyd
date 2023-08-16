@@ -1,5 +1,5 @@
 .curiosity-picture{
-    @include square(0, 400px, 550px);
+    @include square(0, 450px, 700px);
     img{
         @include square(0, 100%, 100%);
         object-fit: cover;
@@ -9,7 +9,7 @@
     @include flexbox(column, start, none);
     padding: 0px;
     height: 100%;
-    width: 550px;
+    width: 700px;
 
     .curiosity-description{
         @include flexbox(row, center, center);

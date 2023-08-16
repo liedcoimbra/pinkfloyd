@@ -1,5 +1,5 @@
 //CSS RESET
-@import "css-reset.scss";
+@import "variables/common/css-reset.scss";
 
 //COMMON VARIABLES
 @import "variables/common/common.scss";
@@ -7,10 +7,10 @@
 @import "variables/common/pages.scss";
 
 //PAGES
+@import "pages/curiosities.scss";
 @import "pages/index.scss";
 @import "pages/discography.scss";
 @import "pages/members.scss";
-@import "pages/curiosities.scss";
 
 //RESPONSIVITY
 @import "variables/common/responsivity.scss"

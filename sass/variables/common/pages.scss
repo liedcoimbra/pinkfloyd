@@ -50,9 +50,9 @@
             }
             .container-description{
                 height: 350px;
-                width: 400px;
+                width: 350px;
                 @include flexbox(column, none, left);
-                @include text-style(#000, 21px, 'Oswald');
+                @include text-style(#000, 20.5px, 'Oswald');
                 gap: 15px;
                 padding-left: 5px;
                 border-radius: 0px 15px 15px 0px;

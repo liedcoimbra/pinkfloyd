@@ -9,7 +9,8 @@
     text-align: center;
 }
 #logo{
-    @include square(0px, 400px, auto);
+    @include square(0px, auto, 90%);
+    max-width: 900px;
 }
 #title{
     text-align: center;
@@ -35,11 +36,18 @@
             margin-top: 90px;
             border: 3px transparent solid;
             object-fit: cover;
+            @media (max-width: 400px){
+                @include square(45px, 250px, 250px);
+                margin-top: 60px;
+            }
         }
         .button-text{
             color: white;
             position: absolute;
             text-transform: uppercase;
+            @media (max-width: 400px){
+                font-size: 40px;
+            }
         }
     }
 }
