@@ -10,13 +10,13 @@
     .age{
         @include flexbox(column, none, center);
         background-color: rgba(0,0,0,0.8);
-        padding: 20px;
+        padding: 10px;
         width: 100%;
         #age{
-            @include text-style(#fff, 85px, ('Oswald', sans-serif));
+            @include text-style(#fff, 60px, ('Oswald', sans-serif));
         }
         #years{
-            @include text-style(#fff, 60px, ('Oswald', sans-serif));
+            @include text-style(#fff, 50px, ('Oswald', sans-serif));
         }
     }
 }
@@ -40,7 +40,7 @@
     }
 }
 
-
+//MODAL
 .modal{
     display: none;
     position: fixed;
