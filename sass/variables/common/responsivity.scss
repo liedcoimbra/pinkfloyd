@@ -103,6 +103,13 @@
         max-height: none;
     }
 }
+@media (max-width: 740px){
+    .container-content{
+        @include flexbox(column, space-between, none);
+        height: 700px;
+        padding: 0px;
+    }
+}
 @media (max-width: 620px){
     /* PÁGINA PRINCIPAL */
     .logo a img{
