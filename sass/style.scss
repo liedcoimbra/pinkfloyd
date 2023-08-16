@@ -3,16 +3,14 @@
 
 //COMMON VARIABLES
 @import "variables/common/common.scss";
-@import "style2.scss";
-
+@import "variables/common/footer.scss";
+@import "variables/common/pages.scss";
 
 //PAGES
 @import "pages/index.scss";
 @import "pages/discography.scss";
 @import "pages/members.scss";
 @import "pages/curiosities.scss";
-
-@import "variables/common/footer.scss";
 
 //RESPONSIVITY
 @import "variables/common/responsivity.scss"

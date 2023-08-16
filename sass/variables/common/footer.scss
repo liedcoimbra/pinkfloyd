@@ -1,39 +1,28 @@
 footer{
     background-color: #111;
     padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #666;
-    font-size: 20px;
+    @include flexbox(row, space-between, center);
+    @include text-style(#666, 35px, 'Oswald');
     text-transform: uppercase;
-    font-family: 'Oswald', sans-serif;
 }
 .official-site{
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
+    @include flexbox(row, none,  none);
+    gap: 15px;
 }
 .official-insta a{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
+    @include flexbox(row, none,  center);
+    gap: 15px;
 }
 .creddits{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    @include flexbox(column, none,  center);
+    gap: 25px;
     text-transform: none;
-    align-items: center;
 }
 .insta{
-    height: 35px;
-    width: 35px;
+    @include square(none, 40px, 40px);
 }
 .creddits a{
-    display: flex;
-    align-items: center;
+    @include flexbox(row, none,  center);
     gap: 10px;
 }
 .links{

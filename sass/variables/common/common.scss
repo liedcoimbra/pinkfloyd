@@ -3,6 +3,17 @@
     font-size: $font-size;
     font-family: $font-family;
 }
+@mixin flexbox($direction, $justify, $align){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin square($radius, $height, $width){
+    border-radius: $radius;
+    height: $height;
+    width: $width;
+}
 #trilhaSonora{
     display: none;
 }

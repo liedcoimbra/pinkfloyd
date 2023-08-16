@@ -1,0 +1,64 @@
+.section-body{
+    background-image: url(../images/darkside2023.jpg);
+    background-size: contain;
+    background-position: center top;
+    background-repeat: repeat;
+}
+.section-logo{
+    margin: 25px auto;
+    text-align: center;
+}
+#section-logo{
+    @include square(0px, auto, 600px)
+}
+.page-content{
+    @include flexbox(row, space-evenly, none);
+    flex-wrap: wrap;
+
+    .page-container{
+        margin: 30px 5px;
+        @include flexbox(column, none, none);
+        border: 5px #000 groove;
+        border-radius: 15px;
+        background-color: rgba(255,255,255,0.8);
+
+        .container-top{
+            @include flexbox(row, space-around, center);
+            text-align: center;
+            border-bottom: 5px #000 groove;
+            padding: 8px;
+            text-transform: uppercase;
+            .container-title{
+                @include text-style(#000, 35px, 'Oswald' );
+            }
+        }
+
+        .container-content{
+            @include flexbox(row, space-between, none);
+            height: 350px;
+            padding: 0px;
+
+            .container-picture{
+                @include square(0 0 0 10px, auto, 350px);
+                background-size: cover;
+                background-position: center top;
+                background-repeat: no-repeat;
+                img{
+                    @include square(0 0 0 10px, 100%, 100%);
+                    object-fit: cover;
+                }
+            }
+            .container-description{
+                height: 350px;
+                width: 400px;
+                @include flexbox(column, none, left);
+                @include text-style(#000, 21px, 'Oswald');
+                gap: 15px;
+                padding-left: 5px;
+                border-radius: 0px 15px 15px 0px;
+                line-height: 1.5;
+                border-left: 5px #000 groove;
+            }
+        }
+    }
+}

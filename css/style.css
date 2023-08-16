@@ -53,8 +53,63 @@ table {
   display: none;
 }
 
-/* FOOTER */
-/* ABAS */
+footer {
+  background-color: #111;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: #666;
+  font-size: 35px;
+  font-family: "Oswald";
+  text-transform: uppercase;
+}
+
+.official-site {
+  display: flex;
+  flex-direction: row;
+  justify-content: none;
+  align-items: none;
+  gap: 15px;
+}
+
+.official-insta a {
+  display: flex;
+  flex-direction: row;
+  justify-content: none;
+  align-items: center;
+  gap: 15px;
+}
+
+.creddits {
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: center;
+  gap: 25px;
+  text-transform: none;
+}
+
+.insta {
+  border-radius: none;
+  height: 40px;
+  width: 40px;
+}
+
+.creddits a {
+  display: flex;
+  flex-direction: row;
+  justify-content: none;
+  align-items: center;
+  gap: 10px;
+}
+
+.links {
+  text-transform: lowercase;
+  color: white;
+}
+
 .section-body {
   background-image: url(../images/darkside2023.jpg);
   background-size: contain;
@@ -68,75 +123,80 @@ table {
 }
 
 #section-logo {
+  border-radius: 0px;
   height: auto;
-  width: 400px;
+  width: 600px;
 }
 
 .page-content {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: space-evenly;
+  align-items: none;
+  flex-wrap: wrap;
 }
-
-.page-container {
+.page-content .page-container {
   margin: 30px 5px;
   display: flex;
   flex-direction: column;
-  border: 5px black groove;
+  justify-content: none;
+  align-items: none;
+  border: 5px #000 groove;
   border-radius: 15px;
   background-color: rgba(255, 255, 255, 0.8);
 }
-
-.container-top {
+.page-content .page-container .container-top {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
   text-align: center;
-  border-bottom: 5px black groove;
+  border-bottom: 5px #000 groove;
   padding: 8px;
   text-transform: uppercase;
 }
-
-.container-title {
-  font-size: 30px;
-  font-family: "Oswald", sans-serif;
+.page-content .page-container .container-top .container-title {
+  color: #000;
+  font-size: 35px;
+  font-family: "Oswald";
 }
-
-.container-content {
+.page-content .page-container .container-content {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  height: 225px;
+  align-items: none;
+  height: 350px;
   padding: 0px;
 }
-
-.container-picture {
-  width: 225px;
+.page-content .page-container .container-content .container-picture {
+  border-radius: 0 0 0 10px;
+  height: auto;
+  width: 350px;
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
-  border-radius: 0px 0px 0px 10px;
 }
-
-.container-picture img {
+.page-content .page-container .container-content .container-picture img {
+  border-radius: 0 0 0 10px;
   height: 100%;
   width: 100%;
   object-fit: cover;
-  border-radius: 0 0 0 10px;
 }
-
-.container-description {
-  height: 225px;
-  width: 350px;
+.page-content .page-container .container-content .container-description {
+  height: 350px;
+  width: 400px;
   display: flex;
   flex-direction: column;
+  justify-content: none;
   align-items: left;
+  color: #000;
+  font-size: 21px;
+  font-family: "Oswald";
   gap: 15px;
   padding-left: 5px;
   border-radius: 0px 15px 15px 0px;
-  font-size: 15px;
-  font-family: "Oswald", sans-serif;
   line-height: 1.5;
-  border-left: 5px black groove;
+  border-left: 5px #000 groove;
 }
 
 .index-body {
@@ -150,16 +210,17 @@ table {
   margin-bottom: 30px;
   text-align: center;
 }
-.logo .logo img {
-  width: 50%;
-  height: auto;
-  margin: 0 auto;
+
+#logo {
+  border-radius: 0px;
+  height: 400px;
+  width: auto;
 }
 
 #title {
   text-align: center;
   color: white;
-  font-size: 55px;
+  font-size: 95px;
   font-family: "Oswald";
   text-transform: uppercase;
   margin-bottom: 120px;
@@ -167,16 +228,19 @@ table {
 
 .container {
   display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
+  align-items: none;
   flex-wrap: wrap;
 }
 .container .section {
   display: flex;
   flex-direction: column;
-  color: white;
-  font-size: 45px;
-  font-family: "Oswald";
+  justify-content: none;
   align-items: center;
+  color: white;
+  font-size: 75px;
+  font-family: "Oswald";
   text-decoration: none;
   transition: 100ms linear;
   position: relative;
@@ -185,17 +249,15 @@ table {
 .container .section:hover {
   transform: scale(1.1);
 }
-
-.button-image {
-  margin-top: 50px;
-  height: 200px;
-  width: 200px;
-  border: 3px transparent solid;
+.container .section .button-image {
   border-radius: 45px;
+  height: 350px;
+  width: 350px;
+  margin-top: 90px;
+  border: 3px transparent solid;
   object-fit: cover;
 }
-
-.button-text {
+.container .section .button-text {
   color: white;
   position: absolute;
   text-transform: uppercase;
@@ -203,39 +265,39 @@ table {
 
 .disco-age {
   display: flex;
-  width: 100%;
+  flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  width: 100%;
   flex-wrap: wrap;
   position: sticky;
   top: 0px;
   margin: 5% auto;
 }
-
-.age {
+.disco-age .age {
   display: flex;
   flex-direction: column;
+  justify-content: none;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.8);
-  padding: 15px;
+  padding: 20px;
   width: 100%;
 }
-
-#age, #years {
-  color: white;
+.disco-age .age #age {
+  color: #fff;
+  font-size: 85px;
   font-family: "Oswald", sans-serif;
 }
-
-#age {
+.disco-age .age #years {
+  color: #fff;
   font-size: 60px;
-}
-
-#years {
-  font-size: 30px;
+  font-family: "Oswald", sans-serif;
 }
 
 .open-preview {
   display: flex;
+  flex-direction: row;
+  justify-content: none;
   align-items: center;
   gap: 5px;
   padding: 0;
@@ -243,18 +305,17 @@ table {
   cursor: pointer;
   background-color: black;
   border-radius: 15px;
-  padding: 4px;
+  padding: 6px;
 }
-
 .open-preview img {
-  height: 30px;
-  width: 30px;
+  border-radius: 0;
+  height: 35px;
+  width: 35px;
 }
-
 .open-preview p {
+  color: #fff;
+  font-size: 30px;
   font-family: "Oswald", sans-serif;
-  font-size: 20px;
-  color: white;
 }
 
 .modal {
@@ -272,17 +333,23 @@ table {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #fff;
-  width: 40%;
-  margin: 100px auto;
-  padding: 20px;
-  border: grey 10px groove;
   border-radius: 10px;
+  height: auto;
+  width: 30%;
+  background-color: #fff;
+  margin: 100px auto;
+  padding: 30px 120px;
+  border: grey 10px groove;
 }
 
 .close-preview {
   display: flex;
+  flex-direction: row;
+  justify-content: none;
   align-items: center;
+  color: #fff;
+  font-size: 30px;
+  font-family: "Oswald", sans-serif;
   gap: 5px;
   padding: 0;
   outline: none;
@@ -290,16 +357,13 @@ table {
   background-color: black;
   border-radius: 15px;
   padding: 4px;
-  font-family: "Oswald", sans-serif;
-  font-size: 20px;
-  color: white;
   margin-bottom: 15px;
 }
 
 #video-container {
   background-color: black;
-  max-height: 281.25px;
-  width: 500px;
+  max-height: auto;
+  max-width: 700px;
   border: 5px grey groove;
 }
 
@@ -308,8 +372,8 @@ table {
 }
 
 #videoPlayer {
-  max-height: 281.25px;
-  width: auto;
+  max-height: auto;
+  max-width: 700px;
   display: block;
   margin: 0 auto;
   border: 0;
@@ -336,26 +400,24 @@ table {
 }
 
 .member-picture {
+  border-radius: 0;
   height: 100%;
   width: 100%;
-}
-
-.member-picture {
   transition: opacity 0.8s ease;
 }
-
 .member-picture:hover {
   opacity: 0;
 }
 
 .curiosity-picture {
+  border-radius: 0;
+  height: 400px;
   width: 550px;
-  height: 350px;
 }
-
 .curiosity-picture img {
-  width: 100%;
+  border-radius: 0;
   height: 100%;
+  width: 100%;
   object-fit: cover;
 }
 
@@ -363,205 +425,29 @@ table {
   display: flex;
   flex-direction: column;
   justify-content: start;
+  align-items: none;
   padding: 0px;
   height: 100%;
   width: 550px;
 }
-
-.curiosity-description {
+.curiosity-content .curiosity-description {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-size: 17px;
-  width: 100%;
-  border-radius: 0px 0px 15px 15px;
+  color: black;
+  font-size: 22px;
   font-family: "Oswald", sans-serif;
+  border-radius: 0 0 15px 15px;
+  height: auto;
+  width: 100%;
   line-height: 1.5;
   border-top: 5px black groove;
 }
-
-.curiosity-description p {
+.curiosity-content .curiosity-description p {
   width: 95%;
 }
 
-footer {
-  background-color: #111;
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: #666;
-  font-size: 20px;
-  text-transform: uppercase;
-  font-family: "Oswald", sans-serif;
-}
-
-.official-site {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-}
-
-.official-insta a {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 10px;
-}
-
-.creddits {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  text-transform: none;
-  align-items: center;
-}
-
-.insta {
-  height: 35px;
-  width: 35px;
-}
-
-.creddits a {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.links {
-  text-transform: lowercase;
-  color: white;
-}
-
-@media (min-width: 1650px) {
-  /* CURIOSIDADES APENAS */
-  .curiosity-picture {
-    width: 800px;
-    height: 550px;
-  }
-  .curiosity-content {
-    width: 800px;
-  }
-  .curiosity-description {
-    font-size: 25px;
-  }
-}
-@media (min-width: 1880px) {
-  /* PÁGINA INICIAL */
-  #logo {
-    width: 40%;
-  }
-  #title {
-    font-size: 90px;
-    margin-bottom: 30px;
-  }
-  .container {
-    margin: 100px 0px;
-  }
-  .button-image {
-    margin-top: 70px;
-    height: 250px;
-    width: 250px;
-  }
-  .button-text {
-    font-size: 70px;
-  }
-  /* FOOTER */
-  footer {
-    font-size: 30px;
-    padding: 25px;
-  }
-  /* ABAS */
-  #section-logo {
-    width: 530px;
-  }
-  .page-container {
-    margin: 30px;
-    border-width: 8px;
-  }
-  .container-top {
-    border-width: 8px;
-  }
-  .container-title {
-    font-size: 40px;
-  }
-  .container-content {
-    height: 350px;
-  }
-  .container-picture, .container-picture img {
-    height: 350px;
-    width: 350px;
-  }
-  .container-description {
-    height: 350px;
-    width: 500px;
-    font-size: 24px;
-    border-left: 8px black groove;
-  }
-  /* APENAS DISCOGRAFIA */
-  #age {
-    font-size: 90px;
-  }
-  #years {
-    font-size: 70px;
-  }
-}
-@media (min-width: 2300px) {
-  /* PÁGINA INICIAL */
-  #title {
-    font-size: 100px;
-  }
-  .container {
-    margin-bottom: 100px;
-  }
-  .section {
-    margin: 40px;
-    font-size: 80px;
-  }
-  .button-image {
-    margin-top: 100px;
-    height: 350px;
-    width: 350px;
-  }
-  /* FOOTER */
-  footer {
-    font-size: 40px;
-    padding: 40px;
-  }
-  /* ABAS */
-  #section-logo {
-    width: 600px;
-  }
-  .container-top {
-    border-width: 8px;
-  }
-  .container-title {
-    font-size: 40px;
-  }
-  .container-content {
-    height: 450px;
-  }
-  .container-picture, .container-picture img {
-    height: 450px;
-    width: 450px;
-  }
-  .container-description, .container-description p {
-    height: 450px;
-    width: 600px;
-    font-size: 29px;
-  }
-  /* CURIOSIDADES APENAS */
-  .curiosity-picture {
-    width: 1000px;
-    height: 650px;
-  }
-  .curiosity-content {
-    width: 1000px;
-  }
-  .curiosity-description {
-    font-size: 31px;
-  }
-}
 @media (max-width: 1300px) {
   /* APENAS DISCOGRAFIA */
   #video-container {
@@ -610,7 +496,7 @@ footer {
 }
 @media (max-width: 620px) {
   /* PÁGINA PRINCIPAL */
-  #logo {
+  .logo a {
     width: 90%;
   }
   .section {

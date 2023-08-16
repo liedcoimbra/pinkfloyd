@@ -7,27 +7,22 @@
 .logo{
     margin-bottom: 30px;
     text-align: center;
-    .logo img{
-        width: 50%;
-        height: auto;
-        margin: 0 auto;
-    }
+}
+#logo{
+    @include square(0px, 400px, auto);
 }
 #title{
     text-align: center;
-    @include text-style(white, 55px, 'Oswald');
+    @include text-style(white, 95px, 'Oswald');
     text-transform: uppercase;
     margin-bottom: 120px;
 }
 .container{
-    display: flex;
-    justify-content: space-evenly;
+    @include flexbox(row, space-evenly, none);
     flex-wrap: wrap;
     .section{
-        display: flex;
-        flex-direction: column;
-        @include text-style(white, 45px, 'Oswald');
-        align-items: center;
+        @include flexbox(column, none, center);
+        @include text-style(white, 75px, 'Oswald');
         text-decoration: none;
         transition: 100ms linear;
         position: relative;
@@ -35,18 +30,16 @@
         &:hover{
             transform: scale(1.1);
         }
+        .button-image{
+            @include square(45px, 350px, 350px);
+            margin-top: 90px;
+            border: 3px transparent solid;
+            object-fit: cover;
+        }
+        .button-text{
+            color: white;
+            position: absolute;
+            text-transform: uppercase;
+        }
     }
-}
-.button-image{
-    margin-top: 50px;
-    height: 200px;
-    width: 200px;
-    border: 3px transparent solid;
-    border-radius: 45px;
-    object-fit: cover;
-}
-.button-text{
-    color: white;
-    position: absolute;
-    text-transform: uppercase;
 }

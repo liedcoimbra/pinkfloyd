@@ -14,12 +14,9 @@
     background-image: url(../images/members/david-gilmour-old.webp);
 }
 .member-picture{
-    height: 100%;
-    width: 100%;
-}
-.member-picture{
+    @include square(0, 100%, 100%);
     transition: opacity 0.8s ease;
-}
-.member-picture:hover{
-    opacity: 0;
+    &:hover{
+        opacity: 0;
+    }
 }

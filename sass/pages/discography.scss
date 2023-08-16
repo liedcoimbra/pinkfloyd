@@ -1,51 +1,46 @@
+//BARRA SUPERIOR
 .disco-age{
-    display: flex;
+    @include flexbox(row, space-evenly, center);
     width: 100%;
-    justify-content: space-evenly;
-    align-items: center;
     flex-wrap: wrap;
     position: sticky;
     top: 0px;
     margin: 5% auto;
+
+    .age{
+        @include flexbox(column, none, center);
+        background-color: rgba(0,0,0,0.8);
+        padding: 20px;
+        width: 100%;
+        #age{
+            @include text-style(#fff, 85px, ('Oswald', sans-serif));
+        }
+        #years{
+            @include text-style(#fff, 60px, ('Oswald', sans-serif));
+        }
+    }
 }
-.age{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgba(0,0,0,0.8);
-    padding: 15px;
-    width: 100%;
-}
-#age, #years{
-    color: white;
-    font-family: 'Oswald', sans-serif;
-}
-#age{
-    font-size: 60px;
-}
-#years{
-    font-size: 30px;
-}
+
+//BOTÃO DE PREVIEW
 .open-preview{
-    display: flex;
-    align-items: center;
+    @include flexbox(row, none, center);
     gap: 5px;
     padding: 0;
     outline: none;
     cursor: pointer;
     background-color: black;
     border-radius: 15px;
-    padding: 4px;
+    padding: 6px;
+
+    img{
+        @include square(0, 35px, 35px);
+    }
+    p{
+        @include text-style(#fff, 30px, ('Oswald', sans-serif));
+    }
 }
-.open-preview img{
-    height: 30px;
-    width: 30px;
-}
-.open-preview p{
-    font-family: 'Oswald', sans-serif;
-    font-size: 20px;
-    color: white;
-}
+
+
 .modal{
     display: none;
     position: fixed;
@@ -56,20 +51,16 @@
     background-color: rgba(0, 0, 0, 0.8);
 }
 .modal-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flexbox(column, center, center);
+    @include square(10px, auto, 30%);
     background-color: #fff;
-    width: 40%;
     margin: 100px auto;
-    padding: 20px;
+    padding: 30px 120px;
     border: grey 10px groove;
-    border-radius: 10px;
 }
 .close-preview{
-    display: flex;
-    align-items: center;
+    @include flexbox(row, none, center);
+    @include text-style(#fff, 30px, ('Oswald', sans-serif));
     gap: 5px;
     padding: 0;
     outline: none;
@@ -77,23 +68,20 @@
     background-color: black;
     border-radius: 15px;
     padding: 4px;
-    font-family: 'Oswald', sans-serif;
-    font-size: 20px;
-    color: white;
     margin-bottom: 15px;
 }
 #video-container{
     background-color: black;
-    max-height: 281.250px;
-    width: 500px;
+    max-height: auto;
+    max-width: 700px;
     border: 5px grey groove;
 }
 #trilha-sonora{
     display: none;
 }
 #videoPlayer {
-    max-height: 281.250px;
-    width: auto;
+    max-height: auto;
+    max-width: 700px;
     display: block;
     margin: 0 auto;
     border: 0;
