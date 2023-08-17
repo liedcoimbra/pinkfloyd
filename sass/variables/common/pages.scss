@@ -59,12 +59,6 @@
                 line-height: 1.5;
                 border-left: 5px #000 groove;
             }
-
-            @media (max-width: 740px){
-                @include flexbox(column, space-between, none);
-                height: 700px;
-                padding: 0px;
-            }
         }
     }
 }

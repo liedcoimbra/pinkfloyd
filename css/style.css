@@ -99,10 +99,14 @@ footer .creddits a {
   align-items: center;
   gap: 10px;
 }
-
-.links {
+footer .links {
   text-transform: lowercase;
   color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
 }
 
 .section-body {
@@ -192,16 +196,6 @@ footer .creddits a {
   border-radius: 0px 15px 15px 0px;
   line-height: 1.5;
   border-left: 5px #000 groove;
-}
-@media (max-width: 740px) {
-  .page-content .page-container .container-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: none;
-    height: 700px;
-    padding: 0px;
-  }
 }
 
 .curiosity-picture {
@@ -467,10 +461,69 @@ footer .creddits a {
   opacity: 0;
 }
 
-@media (max-width: 1300px) {
-  /* APENAS DISCOGRAFIA */
+@media (min-width: 2180px) {
+  /* PÁGINA INICIAL */
+  #title {
+    font-size: 100px;
+  }
+  /* FOOTER */
+  footer {
+    font-size: 40px;
+  }
+  /* ABAS */
+  .page-content .page-container {
+    border-width: 8px;
+  }
+  .page-content .page-container .container-top {
+    border-width: 8px;
+  }
+  .page-content .page-container .container-top .container-title {
+    font-size: 40px;
+  }
+  .page-content .page-container .container-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: none;
+    height: 450px;
+    padding: 0px;
+  }
+  .page-content .page-container .container-content .container-picture {
+    border-radius: 0 0 0 10px;
+    height: 450px;
+    width: 450px;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
+  .page-content .page-container .container-content .container-picture img {
+    border-radius: 0 0 0 10px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .page-content .page-container .container-content .container-description {
+    height: 450px;
+    width: 600px;
+    font-size: 29px;
+    border-width: 8px;
+  }
+  /* CURIOSIDADES */
+  .curiosity-picture {
+    width: 800px;
+    height: 650px;
+  }
+  .curiosity-content {
+    width: 800px;
+  }
+  .curiosity-content .curiosity-description {
+    font-size: 32px;
+  }
+}
+@media (max-width: 1640px) {
+  /* DISCOGRAFIA */
   #video-container {
-    width: 90%;
+    width: 100%;
     padding: 0px;
     max-height: none;
   }
@@ -479,15 +532,17 @@ footer .creddits a {
     max-height: none;
   }
 }
+@media (max-width: 1450px) {
+  /* ABAS */
+  #section-logo {
+    width: 50%;
+  }
+}
 @media (max-width: 1150px) {
   /* FOOTER */
   footer {
     flex-direction: column;
     gap: 35px;
-  }
-  /* ABAS */
-  .section-body {
-    background-size: auto;
   }
 }
 @media (max-width: 1000px) {
@@ -500,7 +555,11 @@ footer .creddits a {
   .button-text {
     font-size: 60px;
   }
-  /* APENAS DISCOGRAFIA */
+  /* ABAS */
+  #section-logo {
+    width: 70%;
+  }
+  /* DISCOGRAFIA */
   .modal-content {
     margin-top: 30px;
     width: 80%;
@@ -516,14 +575,67 @@ footer .creddits a {
     max-height: none;
   }
 }
-@media (max-width: 740px) {
-  .container-content {
+@media (max-width: 800px) {
+  .page-content .page-container {
+    margin: 30px 5px;
+    width: 60%;
+  }
+  .page-content .page-container .container-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 8px;
+    gap: 15px;
+  }
+  .page-content .page-container .container-top .container-title {
+    font-size: 35px;
+  }
+  .page-content .page-container .container-content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: none;
-    height: 700px;
+    height: auto;
     padding: 0px;
+    width: 100%;
+  }
+  .page-content .page-container .container-content .container-picture {
+    border-radius: 0;
+    height: 400px;
+    width: 100%;
+    min-height: 400px;
+    border: none;
+  }
+  .page-content .page-container .container-content .container-picture img {
+    border-radius: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .page-content .page-container .container-content .container-description {
+    height: 100%;
+    width: 100%;
+    gap: 15px;
+    padding-left: 5px;
+    border-radius: 0;
+    line-height: 1.5;
+    border-top: 5px #000 groove;
+    border-left: none;
+  }
+  /* CURIOSIDADE */
+  .curiosity-picture {
+    width: 100%;
+    height: auto;
+  }
+  .curiosity-content {
+    width: 100%;
+  }
+  .curiosity-content .curiosity-description {
+    font-size: 19px;
+    width: 100%;
+    height: 100%;
   }
 }
 @media (max-width: 620px) {
@@ -538,72 +650,47 @@ footer .creddits a {
   footer p, footer a {
     font-size: 19px;
   }
-  /* ABAS */
-  #section-logo {
-    width: 60%;
-  }
-  .section-body {
-    background-size: auto;
-  }
-  .page-container {
-    width: 360px;
-  }
-  .container-top {
-    flex-direction: column;
-    gap: 10px;
-  }
-  .container-title {
-    font-size: 25px;
-  }
-  .container-content {
-    flex-direction: column;
-    width: 360px;
-    height: 580px;
-    align-items: center;
-    justify-content: start;
-  }
-  .container-picture {
-    width: 100%;
-    height: 360px;
-    border-bottom: 5px black groove;
-    border-radius: 0px;
-  }
-  .container-picture img {
-    width: 100%;
-    height: 100%;
-    border-radius: 0px;
-  }
-  .container-description {
-    width: 95%;
-    border: none;
-  }
-  /* APENAS DISCOGRAFIA */
-  #age {
+  /* DISCOGRAFIA */
+  .disco-age .age #age {
     font-size: 45px;
   }
-  #years {
+  .disco-age .age #years {
     font-size: 30px;
   }
-  /* APENAS MEMBROS */
+  /* MEMBROS */
   .member-picture {
     height: 100%;
   }
-  /* APENAS CURIOSIDADE */
-  .curiosity-picture {
-    width: 100%;
-    height: auto;
-  }
+  /* CURIOSIDADE */
   .curiosity-content {
     width: 100%;
   }
-  .curiosity-description {
+  .curiosity-content .curiosity-description {
     font-size: 19px;
     width: 100%;
     height: 100%;
   }
 }
 @media (max-width: 500px) {
-  /* APENAS DISCOGRAFIA */
+  /* ABAS */
+  #section-logo {
+    width: 100%;
+  }
+  .page-content .page-container {
+    width: 90%;
+  }
+  .page-content .page-container .container-top .container-title {
+    font-size: 30px;
+  }
+  .page-content .page-container .container-content .container-picture {
+    height: 100%;
+    min-height: 0;
+  }
+  .page-content .page-container .container-content .container-description {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+  /* DISCOGRAFIA */
   .modal-content, #video-container {
     width: 100%;
     border-left: none;
@@ -624,33 +711,15 @@ footer .creddits a {
   footer p, footer a {
     font-size: 15px;
   }
-  /* ABAS */
-  #section-logo {
-    width: 90%;
-  }
-  .page-container {
-    max-width: 260px;
-  }
-  .container-picture {
-    min-height: 260px;
-    height: 260px;
-  }
-  .container-content, .container-description {
-    width: 260px;
-    height: 550px;
-  }
-  .container-description {
-    width: 95%;
-  }
-  /* APENAS DISCOGRAFIA */
-  #age {
+  /* DISCOGRAFIA */
+  .disco-age .age #age {
     font-size: 30px;
   }
-  #years {
-    font-size: 20px;
+  .disco-age .age #years {
+    font-size: 25px;
   }
-  /* APENAS CURIOSIDADE */
-  .curiosity-description {
+  /* CURIOSIDADE */
+  .curiosity-content .curiosity-description {
     font-size: 17px;
   }
 }

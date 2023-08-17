@@ -28,8 +28,10 @@ footer{
             gap: 10px;
         }
     }
-}
-.links{
-    text-transform: lowercase;
-    color: white;
+    .links{
+        text-transform: lowercase;
+        color: white;
+        @include flexbox(row, center, center);
+        gap: 5px;
+    }
 }
