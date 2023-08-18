@@ -31,6 +31,9 @@
         &:hover{
             transform: scale(1.1);
         }
+        &:focus {
+            outline: none;
+        }
         .button-image{
             @include square(45px, 350px, 350px);
             margin-top: 90px;

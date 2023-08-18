@@ -32,6 +32,9 @@
     border-radius: 15px;
     padding: 6px;
 
+    &:focus {
+        outline: none;
+    }
     img{
         @include square(0, 35px, 35px);
     }
